@@ -6,21 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="292dp" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView7"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:srcCompat="@drawable/logo"-->
+<!--        tools:layout_editor_absoluteX="123dp"-->
+<!--        tools:layout_editor_absoluteY="292dp" />-->
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MANGCHI"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="637dp" />
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="MANGCHI"-->
+<!--        android:textSize="24sp"-->
+<!--        tools:layout_editor_absoluteX="150dp"-->
+<!--        tools:layout_editor_absoluteY="637dp" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
