@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
 
-    <?xml version="1.0" encoding="utf-8"?> <!-- XML 공백 에러 -->
+    <!--<?xml version="1.0" encoding="utf-8"?> -->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:background="#FBCDDC"
             android:gravity="left|fill_vertical"
             android:letterSpacing="0.2"
-            android:paddingLeft="20"
+            android:paddingLeft="20dp"
             android:text="A/S 관리"
             android:textSize="18sp" />
     </LinearLayout>
@@ -31,7 +31,7 @@
         android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="50"
+        android:layout_margin="50dp"
         app:iconifiedByDefault="false"
         app:queryHint="제품명을 검색하여 등록하세요." >
 
@@ -46,16 +46,16 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:text="찾으시는 제품이 없다면?"
-            android:textSize="20" />
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/bt1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:text="등록하기" />
     </LinearLayout>
