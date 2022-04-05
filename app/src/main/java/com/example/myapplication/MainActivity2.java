@@ -10,15 +10,18 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 
 public class MainActivity2 extends AppCompatActivity {
 
     Button bt2;
     TextView tv2,tv3,tv4;
-    String myData="",year,data;
-    int price,chk,lcchangetotal=0,partchangetotal=0,total=0,count;
+    String year,data;
+    int total=0,count,nyear;
     ArrayList<String> myData_2=new ArrayList<>();
+    HashMap<Integer,Integer> lcchangehm=new HashMap<Integer,Integer>();
+    HashMap<Integer,Integer> partchangehm=new HashMap<Integer,Integer>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,19 +32,19 @@ public class MainActivity2 extends AppCompatActivity {
         tv3=findViewById(R.id.textView3);
         tv4=findViewById(R.id.textView4);
         myData_2=getIntent().getStringArrayListExtra("data");
-        price=getIntent().getIntExtra("price",0);
         total=getIntent().getIntExtra("total",0);
-        total=total+price;
-        chk=getIntent().getIntExtra("chk",0);
         year=getIntent().getStringExtra("year");
         count=getIntent().getIntExtra("count",0);
         data="";
-        total+=price;
+        lcchangehm.clear();
+        lcchangehm=(HashMap<Integer, Integer>) getIntent().getSerializableExtra("lcchangehm");
+        partchangehm=(HashMap<Integer, Integer>) getIntent().getSerializableExtra("partchangehm");
         Collections.sort(myData_2);
         for(int i=0;i<myData_2.size();i++){
             data+=myData_2.get(i)+"년"+"\n";
-            data+="액정교체 0000원\n";
-            data+="부품교체 0000원\n";
+            nyear=Integer.parseInt(myData_2.get(i));
+            data+="액정교체 "+lcchangehm.get(nyear)+"원\n";
+            data+="부품교체 "+partchangehm.get(nyear)+"원\n";
             data+="----------------------------------\n";
         }
         tv2.setText("A/S횟수는 "+count+"건이며,");
@@ -52,9 +55,6 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View view) {
                 Intent nIntent=new Intent(getApplicationContext(),MainActivity.class);
                 nIntent.putExtra("data",myData_2);
-                nIntent.putExtra("count",count);
-                nIntent.putExtra("year",year);
-                nIntent.putExtra("total",total);
                 setResult(RESULT_OK,nIntent);
                 finish();
             }
