@@ -5,10 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
-
-    <!--<?xml version="1.0" encoding="utf-8"?> -->
+    tools:context=".Register_Search_1">
+    <?xml version="1.0" encoding="utf-8"?>
 
     <LinearLayout
         android:layout_width="match_parent"
