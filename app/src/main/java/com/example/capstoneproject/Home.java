@@ -2,16 +2,22 @@ package com.example.capstoneproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Home extends AppCompatActivity {
+    Button registration;
+    ImageButton shutdown;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< HEAD
-        setContentView(R.layout.Home);
-=======
+
         setContentView(R.layout.activity_home);
 
         registration = findViewById(R.id.button3);
@@ -32,7 +38,7 @@ public class Home extends AppCompatActivity {
             public void onClick(View v){
                 AlertDialog.Builder builder = new AlertDialog.Builder(Home.this);
                 builder.setMessage("정말로 종료하시겠습니까?");
-                builder.setTitle("종료 알림창")
+                AlertDialog.Builder builder1 = builder.setTitle("종료 알림창")
                         .setCancelable(false)
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override
@@ -51,6 +57,5 @@ public class Home extends AppCompatActivity {
                 alert.show();
             }
         });
->>>>>>> master
     }
 }

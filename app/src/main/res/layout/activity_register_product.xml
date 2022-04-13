@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Logo">
-    <?xml version="1.0" encoding="utf-8"?>
+    <!--<?xml version="1.0" encoding="utf-8"?> 오류 예상-->
 
 
     <LinearLayout
@@ -73,7 +73,7 @@
                 android:id="@+id/tv_date"
                 android:layout_width="247dp"
                 android:layout_height="wrap_content"
-                android:text="출시일 : " />
+                android:text="구매일 : " />
 
             <ImageButton
                 android:id="@+id/bt_calender"
