@@ -5,9 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 
-public class Logo extends AppCompatActivity {
 
-    Button button;
+public class Logo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

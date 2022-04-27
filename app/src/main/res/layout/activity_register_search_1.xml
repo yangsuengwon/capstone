@@ -6,7 +6,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Register_Search_1">
+<<<<<<< HEAD
     <?xml version="1.0" encoding="utf-8"?>
+=======
+    <!--<?xml version="1.0" encoding="utf-8"?> 오류 예상 -->
+>>>>>>> origin/master
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,6 +39,15 @@
 
     </androidx.appcompat.widget.SearchView>
 
+<<<<<<< HEAD
+=======
+    <Button
+        android:id="@+id/bt1_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="검색" />
+
+>>>>>>> origin/master
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

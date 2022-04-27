@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CapstoneProject">
         <activity
-            android:name=".register_self"
-            android:exported="false" />
-        <activity
             android:name=".Register_Product"
             android:exported="false" />
         <activity
