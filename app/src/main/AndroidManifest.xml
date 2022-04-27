@@ -9,17 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CapstoneProject">
-        <activity android:name=".Product_Register_Popup"></activity>
-        <activity android:name=".Repair_Register" />
+        <activity
+            android:name=".Register_Product"
+            android:exported="false" />
+        <activity
+            android:name=".Mypage"
+            android:exported="false" />
         <activity android:name=".Register_Search_2" />
         <activity android:name=".Register_Search_1" />
-        <activity android:name=".Home" android:exported="true">
+        <activity android:name=".Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Logo" />
     </application>
 
 </manifest>
