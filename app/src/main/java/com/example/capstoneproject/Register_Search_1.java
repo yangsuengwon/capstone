@@ -29,7 +29,8 @@ public class Register_Search_1 extends AppCompatActivity {
         search_bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(Register_Search_1.this,Register_Search_2.class);
+                startActivity(intent);
             }
         });
     }

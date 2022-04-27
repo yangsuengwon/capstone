@@ -30,6 +30,13 @@ public class Register_Product extends AppCompatActivity {
 
         int year1 = 0,month1 = 0,day1 = 0;
 
+        imgbt_calender.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Register_Product.this,Product_Register_Popup.class);
+                startActivity(intent);
+            }
+        });
 
         DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
             @Override
