@@ -19,6 +19,7 @@ public class register_self extends AppCompatActivity {
     ImageView imgbt_calender;
     DatePickerDialog datePickerDialog;
     String sDate;
+    int n;
     TextView tv_selfdate;
 
 
