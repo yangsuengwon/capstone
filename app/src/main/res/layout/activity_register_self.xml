@@ -80,14 +80,14 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/textView42"
+            android:id="@+id/tv_selfdate"
             android:layout_width="211dp"
             android:layout_height="42dp"
             android:layout_weight="0"
             android:text="TextView" />
 
         <ImageView
-            android:id="@+id/imageView9"
+            android:id="@+id/self_calender"
             android:layout_width="52dp"
             android:layout_height="match_parent"
             android:layout_weight="0"
