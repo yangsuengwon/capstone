@@ -18,7 +18,7 @@ public class register_self extends AppCompatActivity {
     Button bt_registration;
     ImageView imgbt_calender;
     DatePickerDialog datePickerDialog;
-    String date;
+    String sDate;
     TextView tv_selfdate;
 
 
@@ -52,8 +52,8 @@ public class register_self extends AppCompatActivity {
                             @Override
                             public void onDateSet(DatePicker datePicker, int year, int month, int day){
                                 month+=1;
-                                date=year+"/"+month+"/"+day;
-                                tv_selfdate.setText(date);
+                                sDate=year+"/"+month+"/"+day;
+                                tv_selfdate.setText(sDate);
                             }
 
                         },nYear,nMonth,nDay);
